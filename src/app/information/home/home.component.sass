@@ -289,12 +289,139 @@
 
 
 
-
-
 /*------------CATEGORIES/LINKS--------------*/
 
+/*General*/
+.categories-home
+    padding: 30px 50px
 
+.categories-home h2
+    text-align: center
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 700
+    font-size: 60px
+    line-height: 72px
+    text-align: center
+    color: #000000
 
+.categories-home hr
+    border: 3px solid black
+    width: 300px
+    margin: 20px auto
 
+/* Targets */
+.categories-links
+    display: grid
+    grid-template-columns: auto auto auto auto auto
+    align-items: center
+
+.categories-box
+    width: 220px
+    margin: 0 10px
+    background-color: #ECECEC
+    text-align: center
+    display: flex
+    flex-direction: column
+
+/* Targets IMG */
+$imagen-fondo-home: url("../../../assets/img/home-carousel.png")
+$imagen-fondo-tech: url("../../../assets/img/tech-carousel.png")
+$imagen-fondo-pets: url("../../../assets/img/pets-carousel.png")
+$imagen-fondo-beauty: url("../../../assets/img/beauty-carousel.png")
+$imagen-fondo-fitness: url("../../../assets/img/fitness-carousel.png")
+
+.categories-box-img
+    background-color: black
+    background-position: center
+    background-size: cover
+    height: 200px
+
+.categories-box-img.house
+    background-image: $imagen-fondo-home
+
+.categories-box-img.tech
+    background-image: $imagen-fondo-tech
+
+.categories-box-img.pets
+    background-image: $imagen-fondo-pets
+
+.categories-box-img.beauty
+    background-image: $imagen-fondo-beauty
+
+.categories-box-img.fit
+    background-image: $imagen-fondo-fitness
+
+/* Targets TEXT*/
+.categories-box-text
+    padding: 20px 0
+
+.categories-box-text i
+    font-size: 35px
+    color: black
+
+.categories-box-text h3
+    padding: 10px 0
+    font-size: 22px
+    font-weight: 700
+
+.categories-box-text ul li
+    margin: 5px 0
+
+/* Targets BTN*/
+.categories-box-btn
+    margin-top: 10px
+    display: inline-block
+    padding: 10px 30px
+    color: white
+    text-transform: uppercase
+    border-radius: 30px
+    font-weight: 700
+
+.categories-box-btn.house
+    background: linear-gradient(90deg, #00F260 0%, #0575E6 100%)
+
+.categories-box-btn.tech
+    background: linear-gradient(90deg, #0F2027 0%, #203A43 50%, #2C5364 100%)
+
+.categories-box-btn.pets
+    background: linear-gradient(90deg, #000000 0%, #0F9B0F 100%)
+
+.categories-box-btn.beauty
+    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%)
+
+.categories-box-btn.fit
+    background: linear-gradient(90deg, #C21500 0%, #FFC500 100%)
+
+/*MEDIA QUIERES (DESKTOP)*/
+@media screen and (max-width:1400px)
+    .categories-links
+        grid-template-columns: auto auto auto
+        justify-content: center
+        
+    .categories-box
+        margin: 10px
+
+/*MEDIA QUIERES (TABLET)*/
+@media screen and (max-width:750px)
+    .categories-home h2
+        font-size: 40px
+        line-height: 40px
+    
+    .categories-links
+        grid-template-columns: auto auto
+
+/*MEDIA QUIERES (MOVIL)*/
+@media screen and (max-width:520px)
+    .categories-home h2
+        font-size: 30px
+        line-height: 30px
+
+    .categories-home hr
+        width: 200px
+        border: 1px solid black
+    
+    .categories-links
+        grid-template-columns: auto 
 
 /*-------------FORM/COMMENTS---------------*/
