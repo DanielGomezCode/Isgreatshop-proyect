@@ -267,7 +267,8 @@
     transition: .2s ease
 
 .action-two a:hover
-    background: #70FF00
+    background: orange
+    color: white
     font-size: 18px
     transition: .2s ease
 
@@ -425,3 +426,120 @@ $imagen-fondo-fitness: url("../../../assets/img/fitness-carousel.png")
         grid-template-columns: auto 
 
 /*-------------FORM/COMMENTS---------------*/
+
+/*Contact*/
+
+$image-form: url('../../../assets/img/comments-home.png')
+
+/* Form GENERAL */
+.form-home
+    padding: 50px 100px
+    background: linear-gradient(90deg, #C21500 0%, #FFC500 100%)
+
+.form-container
+    width: 100%
+    height: 600px
+    background-color: white
+    display: flex
+    justify-content: space-between
+
+/* Form IMG */   
+.form-img
+    width: 50%
+    background-image: $image-form
+    background-position: center
+    background-size: cover
+
+/* Form TEXT */
+.form-text
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 20px
+
+.form-text h3
+   padding: 20px 0
+   font-weight: 800
+   font-size: 50px
+   line-height: 45px
+   text-align: center 
+
+.form-text form
+    padding: 20px
+
+.form-text form input[type="text"], .form-text form input[type="email"]
+    border: none
+    border-bottom: 1px solid #ccc
+    padding: 10px 0
+    outline: none
+    width: 100%
+    margin-bottom: 10px
+    color: black
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.5px
+
+.form-text form textarea
+  border: none
+  border-bottom: 1px solid #ccc
+  padding: 10px 0
+  outline: none
+  width: 100%
+  max-width: 100%
+  max-height: 88px
+  min-height: 88px
+  color: #979797
+  margin-bottom: 10px
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 0
+
+.form-text form p
+  display: none
+  color: #ff0000
+  font-size: 14px
+  margin-top: -10px
+  margin-bottom: 10px
+
+.form-text form .form-error-name-none.error
+    display: block
+
+.form-text form .form-error-name.error
+    display: block
+
+.form-text form .form-error-message-none.error
+    display: block
+
+.form-text form input[type="submit"]
+  width: 100%
+  border: none
+  padding: 8px
+  background: orange
+  color: #fff
+  font-size: 16px
+  font-weight: 600
+  letter-spacing: 0.5px
+  cursor: pointer
+  transition: all .5s ease
+
+
+.form-text form input[type="submit"]:hover
+    background-color: black
+    transition: 0.5s ease-in-out
+
+/* Form MEDIA QUIERES */
+@media screen and (max-width: 960px)
+    .form-img
+        display: none
+
+    .form-text
+        width: 100%
+
+@media screen and (max-width: 650px)
+    .form-home
+        padding: 30px
+    
+    .form-text h3
+        font-size: 35px
+        line-height: 30px
