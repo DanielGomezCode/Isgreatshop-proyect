@@ -1,0 +1,152 @@
+/* General Adjuts */ 
+.first-header
+    position: fixed
+    width: 100%
+    padding: 10px 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    transition: .3s ease
+
+//Efecto Scroll
+.first-header.white
+    background: white
+    transition: .3s ease
+    border-bottom: 1px solid black
+
+/* Bar-sidebar */
+.open-sidebar
+    display: none
+
+#bar-sidebar
+    display: none
+    font-size: 25px
+    cursor: pointer
+    transition: .3s ease
+
+#bar-sidebar:hover
+    font-size: 30px
+    color: #FF9900
+    transition: .3s ease
+
+
+/* Logo */
+.logo
+    width: 60px
+    cursor: pointer
+
+/* Nav */
+.browser ul
+    display: flex
+
+.browser ul li
+    margin: 0 40px
+
+.browser ul li a
+    color: black
+    font-weight: 600
+    transition: .3s ease
+
+.browser ul li a:hover
+    text-decoration: underline
+    color: #FF9900
+    transition: .3s ease
+
+.header-categories-submenu
+    display: none
+    border: 1px solid black
+    background: white
+    position: absolute
+    margin-top: 33px
+
+.header-categories-submenu.active
+    display: block
+
+.header-categories-submenu li
+    padding: 10px 0
+
+/* Carrito */
+#cart
+    font-size: 25px
+    cursor: pointer
+    transition: .3s ease
+
+#cart:hover
+    font-size: 30px
+    color: #FF9900
+    transition: .3s ease
+
+@media screen and (max-width:1000px)
+    .first-header
+        padding: 20px 30px
+    
+    .logo, .browser
+        display: none
+
+    .open-sidebar
+        display: block
+    
+    #bar-sidebar
+        display: block
+
+
+/*----------SIDEBAR------------*/
+
+/* Sidebar */
+.sidebar-header
+    position: fixed
+    top: 0
+    left: -100%
+    background-color: white
+    width: 200px
+    height: 100vh
+    display: flex
+    flex-direction: column
+    border-right: 1px solid black
+    transition: 0.5s ease
+
+.sidebar-header.active
+    left: 0
+    transition: 0.5s ease
+
+/* Close-sidebar */
+.close-sidebar
+    text-align: end
+    padding: 20px
+
+#close-sidebar-header 
+    font-size: 25px
+    cursor: pointer
+
+/* Logo */
+.sidebar-logo
+    width: 120px
+    margin: 0 auto
+    padding: 20px 0
+    border-bottom: 1px solid black
+
+/*Browser*/
+.sidebar-submenu-1
+    padding: 30px
+
+.sidebar-submenu-1 li
+    margin: 10px 0
+
+.sidebar-submenu-1 li a
+    color: black
+    font-weight: 600
+
+.category-title
+    color: #FF9900
+
+/* Submenu 2 */
+.sidebar-submenu-2
+    margin: 20px 0
+
+.sidebar-submenu-2 li
+    list-style: circle
+    margin-left: 20px
+
+.sidebar-submenu-2 li a
+    font-size: 12px
+
