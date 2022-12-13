@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  
+
   constructor() { }
 
   ngOnInit(): void {
+
   
     //FORM
     let form = document.getElementsByClassName('form')[0]

@@ -39,18 +39,6 @@ export class HeaderComponent implements OnInit {
       var menu = document.getElementsByClassName('first-header')[0]
       menu.classList.toggle('white', window.scrollY>0);   
   }
-
-  // Cart 
-    let cartIcon = document.querySelector('.cart-icon')
-    let cart = document.querySelector('.cart')
-    let closeCart = document.querySelector('#close-cart')
-    
-    cartIcon?.addEventListener('click', function(){
-      cart?.classList.add('active')
-    })
-    closeCart?.addEventListener('click', function(){
-      cart?.classList.remove('active')
-    })
-
+  
   }
 }
