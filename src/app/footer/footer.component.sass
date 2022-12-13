@@ -58,3 +58,37 @@
 
 .footer-social a:hover
     color: orange
+
+/*MEDIA QUIERES*/
+@media screen and (max-width: 1000px)
+    .footer-container-one
+        flex-direction: column
+    
+    .footer-links
+        width: 100%
+        justify-content: center
+        order: 1
+        margin-top: 30px
+
+    .footer-about
+        width: 100%
+        order: 0
+
+@media screen and (max-width: 610px)
+    .footer-container-two
+        flex-direction: column
+        text-align: center
+
+    .footer-social
+        margin-top: 15px
+
+@media screen and (max-width: 500px)
+    .footer-links
+        flex-direction: column
+        
+    .footer-links-box
+        margin: 20px 0
+        text-align: center
+
+    .footer-about
+        display: none
