@@ -28,6 +28,18 @@ export class CartComponent implements OnInit {
       ready();
     }
 
+    //Product
+    var cactusOne = document.getElementsByClassName('open-cactus')[0]
+    var cactusTwo = document.getElementsByClassName('cactus')[0]
+    var closeCactus = document.getElementsByClassName('close-cactus')[0]
+
+    cactusOne.addEventListener('click', function(){
+      cactusTwo.classList.add('active')
+    })
+    closeCactus.addEventListener('click', function(){
+      cactusTwo.classList.remove('active')
+    })
+
     // Making Function
     function ready(){
       //Remove Items From Cart
@@ -42,6 +54,12 @@ export class CartComponent implements OnInit {
       for (var i = 0; i < removeCartButtons.length; i++){
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
+      }
+      // Add To Cart
+      var addCart = document.getElementsByClassName('add-cart')
+      for (var i = 0; i < addCart.length; i++){
+        var button = addCart[i]
+        button.addEventListener('click', addCartClicked);
       }
     }
   
@@ -60,9 +78,14 @@ export class CartComponent implements OnInit {
       upgatetotal()
     }
 
-    //Plan B
-    var cactus = document.getElementsByClassName('cactus')[0]
-    var cactusBtn = document.getElementsByClassName('cactus-btn')[0]
+    //Add to Cart
+    function addCartClicked(event:any){
+      var button = event.target
+      var shopProducts = button.parentElement
+      var title = shopProducts.getElementsByClassName('product-title')[0]
+      console.log(title)
+    
+    }
 
     // Upgate Total
     function upgatetotal(){
