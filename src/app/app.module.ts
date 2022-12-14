@@ -29,6 +29,7 @@ const routes: Routes = [
  {path: 'nosotros', component:AboutComponent},
  {path: 'shop', component:ShopComponent},
  {path: 'contact', component:ContactComponent},
+ {path: 'terms', component:TermsComponent},
  {path: 'privacy', component:PrivacyComponent},
  {path: 'shipping', component:ShippingComponent},
  {path: 'refund', component:RefundComponent},
