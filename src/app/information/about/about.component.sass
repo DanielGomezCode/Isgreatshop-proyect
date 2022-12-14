@@ -1,0 +1,234 @@
+/* Variables */
+$background-about: url(../../../assets/img/about-us.jpg)
+$DirectorIsgreatshop: url(../../../assets/img/jhoner-min.jpg)
+
+    
+/* ----------------------------------------- */
+
+/* Banner About */
+.banner-about
+    width: 100%
+    height: 80vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-image: $background-about
+    background-attachment: fixed
+    background-size: cover
+    background-position: center
+
+.banner-about h3
+    font-weight: 800
+    font-size: 100px
+    line-height: 100px
+    text-align: center
+    color: #ffffff
+
+
+.banner-about h2
+    padding-top: 20px
+    font-size: 40px
+    color: white
+    text-align: center
+    font-weight: 600
+
+
+.see-up
+    margin-top: 20px
+    font-size: 80px
+    color: white
+    cursor: pointer
+    text-align: center
+
+/* MEDIA QUIERES */
+@media screen and (max-width:700px)
+    .banner-about h3
+        font-size: 60px
+        line-height: 60px
+
+    .banner-about h2
+        font-size: 22px
+        line-height: 25px
+
+    .see-up
+        font-size: 50px
+        margin-top: 10px
+
+@media screen and (max-width:400px)
+    .banner-about
+        height: 70vh
+
+    .banner-about h3
+        font-size: 45px
+        line-height: 45px
+
+    .banner-about h2
+        font-size: 18px
+        line-height: 18px
+
+    .see-up
+        font-size: 40px
+        margin-top: 5px
+
+/* ----------------------------------------- */
+
+/* Min-Banner */
+.min-banner
+    background-color: orange
+    padding: 33px
+    display: flex
+    justify-content: space-between
+
+.min-text
+    display: flex
+    align-items: center
+
+.min-text i
+    font-size: 30px
+    color: white
+    color: white
+    padding: 15px
+    background: black
+    border-radius: 50px
+
+#clic-icon
+    padding: 15px 22px
+
+.min-text-description
+    margin-left: 10px
+
+.min-text-description h3
+    font-size: 24px
+    font-weight: 800
+
+.min-text-description p
+    font-size: 18px
+    font-weight: 400
+
+/* MEDIA QUIERE */
+@media screen and (max-width:930px)
+    .min-banner
+        flex-direction: column
+    
+    .min-text
+        flex-direction: column
+        text-align: center
+        margin: 15px 0
+
+/* ----------------------------------------- */
+.about-information
+    width: 100%
+    display: flex
+    padding: 50px
+    justify-content: space-between
+
+.about-text h2
+    font-weight: 700
+    font-size: 60px
+    line-height: 72px
+    padding-bottom: 20px
+
+.about-text
+    width: 60%
+    padding-right: 100px    
+
+.about-text hr
+    width: 400px
+    border: 2px solid black
+
+.about-text p
+    margin: 20px 0
+    font-weight: 600
+    font-size: 22px
+
+.about-user
+    width: 40%
+    background-image: $DirectorIsgreatshop
+    background-position: center
+    background-size: cover
+
+@media screen and (max-width: 1100px)
+    .about-text h2
+        font-size: 40px
+        line-height: 40px
+    
+    .about-text hr
+        width: 300px
+
+    .about-text p
+        margin: 15px 0
+        font-size: 18px
+
+
+@media screen and (max-width: 900px)
+    .about-information
+        padding: 30px
+
+    .about-text
+        width: 100%
+        padding: 0
+
+    .about-text h2
+        text-align: center
+        font-size: 35px
+
+    .about-text hr
+        margin: 0 auto
+        width: 200px
+
+    .about-text p
+        text-align: justify
+
+    .about-user
+        display: none
+
+/* ----------------------------------------- */
+.invitation-privacy
+    padding: 33px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: orange
+
+.invitation-text-privacy h4
+    font-size: 40px
+    font-weight: 800
+
+.invitation-text-privacy p
+    font-size: 22px
+    font-weight: 600
+    padding-top: 10px
+
+.invitation-privacy a
+    display: inline-block
+    padding: 10px 40px
+    background-color: black
+    font-size: 22px
+    color: white
+    text-transform: uppercase
+    font-weight: 600
+    transition: 0.4s
+
+.invitation-privacy a:hover
+    color: black
+    background-color: white
+    font-size: 24px
+    transition: 0.4s ease
+
+@media screen and (max-width: 1100px)
+   .invitation-privacy
+        flex-direction: column
+        text-align: center  
+
+.invitation-privacy a
+        margin-top: 10px
+
+@media screen and (max-width: 500px)
+    .invitation-text-privacy h4
+        font-size: 30px
+
+    .invitation-text-privacy p
+        font-size: 18px
+
+    .invitation-privacy a
+        font-size: 18px
