@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router'
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './information/home/home.component';
@@ -21,6 +23,24 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { BtnUpComponent } from './btn-up/btn-up.component';
+
+const routes: Routes = [
+ {path: '', component:HomeComponent},
+ {path: 'nosotros', component:AboutComponent},
+ {path: 'shop', component:ShopComponent},
+ {path: 'contact', component:ContactComponent},
+ {path: 'privacy', component:PrivacyComponent},
+ {path: 'shipping', component:ShippingComponent},
+ {path: 'refund', component:RefundComponent},
+ {path: 'track', component:TrackOrderComponent},
+ {path: 'payment', component:PaymentComponent},
+ {path: 'house', component:HouseComponent},
+ {path: 'tech', component:TechnologyComponent},
+ {path: 'pets', component:PetsComponent},
+ {path: 'beauty', component:BeautyComponent},
+ {path: 'fit', component:FitnessComponent},
+
+]
 
 @NgModule({
   declarations: [
@@ -46,7 +66,10 @@ import { BtnUpComponent } from './btn-up/btn-up.component';
     BtnUpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    RouterModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
