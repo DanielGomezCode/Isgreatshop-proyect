@@ -1,0 +1,329 @@
+/* Variables */
+$bg-shop: url(../../../assets/img/shop-bg.png)
+$bg-house: url(../../../assets/img/house-bg.png)
+$bg-tech: url(../../../assets/img/tech-bg.png)
+$bg-pets: url(../../../assets/img/pet-bg.png)
+$bg-beauty: url(../../../assets/img/beauty-bg.png)
+$bg-fit: url(../../../assets/img/fit-bg.png)
+
+
+/* SHOP BANNER */
+.shop-banner
+    width: 100%
+    height: 500px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    background-image: $bg-shop
+    background-attachment: fixed
+    background-position: center
+    background-size: cover
+    padding: 50px
+    text-align: center
+    align-items: center
+
+.shop-banner h4
+    font-weight: 600
+    font-size: 30px
+    color: white
+    padding-bottom: 10px
+    font-style: italic
+
+.shop-banner h2
+    font-weight: 900
+    font-size: 80px
+    line-height: 70px
+    color: white
+
+.shop-banner p
+    font-weight: 400
+    font-size: 22px
+    color: white
+    padding-top: 10px
+
+@media screen and (max-width:1100px)
+    .shop-banner h2
+        font-size: 60px
+        line-height: 50px
+
+@media screen and (max-width:700px)
+    .shop-banner
+        padding: 30px 20px
+        height: 350px
+    
+    .shop-banner h2
+        font-size: 35px
+        line-height: 35px
+
+    .shop-banner h4
+        font-size: 18px
+
+    .shop-banner p
+        font-size: 14px
+/* ----------------------------------------- */
+
+/* Min-Banner */
+.min-banner
+    background-color: orange
+    padding: 33px
+    display: flex
+    justify-content: space-between
+
+.min-text
+    display: flex
+    align-items: center
+
+.min-text i
+    font-size: 30px
+    color: white
+    color: white
+    padding: 15px
+    background: black
+    border-radius: 50px
+
+#clic-icon
+    padding: 15px 22px
+
+.min-text-description
+    margin-left: 10px
+
+.min-text-description h3
+    font-size: 24px
+    font-weight: 800
+
+.min-text-description p
+    font-size: 18px
+    font-weight: 400
+
+/* MEDIA QUIERE */
+@media screen and (max-width:930px)
+    .min-banner
+        flex-direction: column
+    
+    .min-text
+        flex-direction: column
+        text-align: center
+        margin: 15px 0
+
+/* ----------------------------------------- */
+
+.featured-product
+    padding: 30px 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.featured-product-img img
+    width: 500px
+
+.product-featured-text
+    padding-right: 100px
+
+.product-featured-text h3
+    font-size: 25px
+    font-weight: 600
+
+.product-featured-text h4
+    font-size: 80px
+    font-weight: 800
+
+.product-featured-text p
+    font-size: 24px
+    font-weight: 600
+
+.featured-product-price
+    padding: 10px 0
+    display: flex
+    align-items: center
+
+.featured-product-price .featured-product-price-now
+    font-weight: 800
+    padding-right: 20px
+    font-size: 50px
+    color: black
+
+.featured-product-price .featured-product-price-before
+    font-weight: 600
+    font-size: 20px
+    color: gray
+
+.featured-product-btns
+    padding: 20px 0
+    display: flex
+    align-items: center
+
+.featured-product-btns a
+    display: inline-block
+    padding: 10px 30px
+    color: white
+    background-color: black
+    font-size: 22px
+    font-weight: 600
+
+.featured-product-btns a:first-child
+    margin: 0 10px 0 0
+
+.featured-product-btns a:last-child
+    background: orange
+    color: black
+
+@media screen and (max-width:1100px)
+    .product-featured-text h3
+        font-size: 20px
+
+    .product-featured-text h4
+        font-size: 60px
+
+    .product-featured-text p
+        font-size: 18px
+
+    .featured-product-img img
+        width: 400px
+
+@media screen and (max-width:990px)
+    .featured-product
+        flex-direction: column
+
+    .product-featured-text
+        order: 1
+        padding: 20px
+        text-align: center
+
+    .featured-product-img
+        order: 0
+
+    .featured-product-price, .featured-product-btns
+        justify-content: center
+
+@media screen and (max-width:570px)
+    .featured-product-img img
+        width: 300px
+
+    .product-featured-text h3
+        font-size: 16px
+
+    .product-featured-text h4
+        font-size: 40px
+
+    .product-featured-text p
+        font-size: 16px
+
+    .featured-product-btns a
+        font-size: 14px
+        padding: 10px
+
+
+/* ----------------------------------------- */
+
+.shop-products-home
+    padding: 50px 10px
+    text-align: center
+    background-image: $bg-house
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+
+.shop-products-home p
+    font-size: 22px
+    font-weight: 600
+    color: white
+
+.shop-products-home h4
+    font-size: 55px
+    font-weight: 800
+    color: white
+
+/* ----------------------------------------- */
+
+.shop-products-tech
+    padding: 50px 10px
+    text-align: center
+    background-image: $bg-tech
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+
+.shop-products-tech p
+    font-size: 22px
+    font-weight: 600
+    color: white
+
+.shop-products-tech h4
+    font-size: 45px
+    font-weight: 800
+    color: white
+
+/* ----------------------------------------- */
+
+.shop-products-pets
+    padding: 50px 10px
+    text-align: center
+    background-image: $bg-pets
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+
+.shop-products-pets p
+    font-size: 22px
+    font-weight: 600
+    color: white
+
+.shop-products-pets h4
+    font-size: 55px
+    font-weight: 800
+    color: white
+
+/* ----------------------------------------- */
+
+.shop-products-beauty
+    padding: 50px 10px
+    text-align: center
+    background-image: $bg-beauty
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+
+.shop-products-beauty p
+    font-size: 22px
+    font-weight: 600
+    color: white
+
+.shop-products-beauty h4
+    font-size: 55px
+    font-weight: 800
+    color: white
+
+/* ----------------------------------------- */
+
+.shop-products-fit
+    padding: 50px 10px
+    text-align: center
+    background-image: $bg-fit
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+
+.shop-products-fit p
+    font-size: 22px
+    font-weight: 600
+    color: white
+
+.shop-products-fit h4
+    font-size: 55px
+    font-weight: 800
+    color: white
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
