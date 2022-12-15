@@ -28,7 +28,9 @@ export class CartComponent implements OnInit {
       ready();
     }
 
-    //Product
+    //----------------HOUSE----------------------
+
+    //CACTUS
     var cactusOne = document.getElementsByClassName('open-cactus')[0]
     var cactusTwo = document.getElementsByClassName('cactus')[0]
     var closeCactus = document.getElementsByClassName('close-cactus')[0]
@@ -39,6 +41,99 @@ export class CartComponent implements OnInit {
     closeCactus.addEventListener('click', function(){
       cactusTwo.classList.remove('active')
     })
+
+    //CUCHILLO MODERNO
+    var homeTwo = document.getElementsByClassName('open-house-two')[0]
+    var cartHousetwo = document.getElementsByClassName('cart-house-two')[0]
+    var closeCartHouseTwo = document.getElementsByClassName('close-house-two')[0]
+
+    homeTwo.addEventListener('click', function(){
+    cartHousetwo.classList.add('active')
+    })
+    closeCartHouseTwo.addEventListener('click', function(){
+    cartHousetwo.classList.remove('active')
+    })
+        
+    //ALMOHADILLA
+    var homeThree = document.getElementsByClassName('open-house-three')[0]
+    var cartHouseThree = document.getElementsByClassName('cart-house-three')[0]
+    var closeCartHouseThree = document.getElementsByClassName('close-house-three')[0]
+    
+    homeThree.addEventListener('click', function(){
+    cartHouseThree.classList.add('active')
+    })
+    closeCartHouseThree.addEventListener('click', function(){
+    cartHouseThree.classList.remove('active')  
+    })
+
+    //SET-COCINA
+    var homeFour = document.getElementsByClassName('open-house-four')[0]
+    var cartHouseFour = document.getElementsByClassName('cart-house-four')[0]
+    var closeCartHouseFour = document.getElementsByClassName('close-house-four')[0]
+    
+    homeFour.addEventListener('click', function(){
+    cartHouseFour.classList.add('active')
+    })
+    closeCartHouseFour.addEventListener('click', function(){
+    cartHouseFour.classList.remove('active')  
+    })
+
+    //DISPENSADOR DE AGUA
+    var homeFive = document.getElementsByClassName('open-house-five')[0]
+    var cartHouseFive = document.getElementsByClassName('cart-house-five')[0]
+    var closeCartHouseFive = document.getElementsByClassName('close-house-five')[0]
+    
+    homeFive.addEventListener('click', function(){
+    cartHouseFive.classList.add('active')
+    })
+    closeCartHouseFive.addEventListener('click', function(){
+    cartHouseFive.classList.remove('active')  
+    })
+
+    //COJIN ELECTRICO
+    var homeSix = document.getElementsByClassName('open-house-six')[0]
+    var cartHouseSix = document.getElementsByClassName('cart-house-six')[0]
+    var closeCartHouseSix = document.getElementsByClassName('close-house-six')[0]
+    
+    homeSix.addEventListener('click', function(){
+    cartHouseSix.classList.add('active')
+    })
+    closeCartHouseSix.addEventListener('click', function(){
+    cartHouseSix.classList.remove('active')  
+    })
+
+    //ARO DE LUZ
+    var homeSeven = document.getElementsByClassName('open-house-seven')[0]
+    var cartHouseSeven = document.getElementsByClassName('cart-house-seven')[0]
+    var closeCartHouseSeven = document.getElementsByClassName('close-house-seven')[0]
+    
+    homeSeven.addEventListener('click', function(){
+    cartHouseSeven.classList.add('active')
+    })
+    closeCartHouseSeven.addEventListener('click', function(){
+    cartHouseSeven.classList.remove('active')  
+    })
+
+    //PROTECTOR SOFA
+    var homeEich = document.getElementsByClassName('open-house-eich')[0]
+    var cartHouseEich = document.getElementsByClassName('cart-house-eich')[0]
+    var closeCartHouseEich = document.getElementsByClassName('close-house-eich')[0]
+    
+    homeEich.addEventListener('click', function(){
+    cartHouseEich.classList.add('active')
+    })
+    closeCartHouseEich.addEventListener('click', function(){
+    cartHouseEich.classList.remove('active')  
+    })
+
+    var techOne = document.getElementsByClassName('open-house-nine')[0]
+
+    techOne.addEventListener('click', function(){
+      alert('hola')
+    })
+
+
+
 
     // Making Function
     function ready(){
@@ -109,5 +204,6 @@ export class CartComponent implements OnInit {
     }
 
   }
+  
 
 }
