@@ -23,6 +23,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { BtnUpComponent } from './btn-up/btn-up.component';
+import { ShopHouseComponent } from './shop-house/shop-house.component';
+import { ShopTechComponent } from './shop-tech/shop-tech.component';
+import { ShopBeautyComponent } from './shop-beauty/shop-beauty.component';
+import { ShopPetsComponent } from './shop-pets/shop-pets.component';
+import { ShopFitComponent } from './shop-fit/shop-fit.component';
 
 const routes: Routes = [
  {path: '', component:HomeComponent},
@@ -64,7 +69,12 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     CartComponent,
-    BtnUpComponent
+    BtnUpComponent,
+    ShopHouseComponent,
+    ShopTechComponent,
+    ShopBeautyComponent,
+    ShopPetsComponent,
+    ShopFitComponent
   ],
   imports: [
     BrowserModule,
