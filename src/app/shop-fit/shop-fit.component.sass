@@ -1,0 +1,67 @@
+/*------------FEATURED PRODUCRS--------------*/
+.shop.container
+    padding: 50px 150px
+
+
+.section-title
+    font-size: 40px
+    font-weight: 800
+    text-align: center
+    margin-bottom: 2.5rem
+
+
+
+/* Shop content */
+.shop-content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto))
+    gap: 1.5rem
+
+.product-box
+    text-align: center
+
+.product-box:hover
+    padding: 2px
+    border: 1px solid black
+    transition: 0.4s
+
+
+.product-img
+    width: 150px
+    height: 150px
+    margin-bottom: 0.5rem
+
+.product-title
+    text-align: center
+    font-size: 1.1rem
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 1.5rem
+
+.product-table
+    display: flex
+    justify-content: space-between
+
+.price
+    font-weight: 500
+
+
+.add-cart
+    bottom: 0
+    right: 0
+    background-color: orange
+    color: white
+    padding: 10px
+    cursor: pointer
+
+
+.add-cart:hover
+    background-color: black
+    transition: 0.4s
+
+@media screen and (max-width: 550px)
+    .shop.container
+        padding: 50px
+
+.no-ver
+    display: none
